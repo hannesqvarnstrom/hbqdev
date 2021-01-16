@@ -19,6 +19,7 @@ Route::get('/', function () {
     return view('index');
 });
 Route::resource('posts', PostController::class);
+Route::resource('comments', CommentController::class);
 // Route::get('/', function () {
 //     return view('welcome');
 // });

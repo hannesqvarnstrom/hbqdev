@@ -7,4 +7,6 @@
     <p>{{$post->body}}</p>
         </div>
     </div>
+    <x-comment-form :post='$post'></x-comment-form>
+    <x-comments-list :post='$post'></x-comments-list>
 </x-layout.layout>

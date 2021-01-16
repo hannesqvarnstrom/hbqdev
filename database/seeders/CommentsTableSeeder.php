@@ -8,6 +8,6 @@ class CommentsTableSeeder extends Seeder
 {
     public function run()
     {
-        \App\Models\Comment::factory()->count(25)->create();
+        \App\Models\Comment::factory()->count(255)->create();
     }
 }
