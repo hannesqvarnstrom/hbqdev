@@ -1,23 +1,13 @@
 <x-layout.layout>
     {{Breadcrumbs::render('posts')}}
+<ul class='row'>
+    <h3>Categories</h3>
+    @foreach ($categories as $cat)
+    <x-category-item :category='$cat'></x-category-item>
+@endforeach
+</ul>
 <h2>All posts</h2>
 <hr>
-<?php $chunkposts = $posts->chunk(2)?>
-<div class='container'>
-@foreach ($chunkposts as $chunk)
-<div class='row'>
-@foreach ($chunk as $post)
-<div class='col-md-6'>
-    <div class='card px-2'>
-<a href='/posts/{{$post->id}}'><h4>{{$post->title}}</h4></a>
-<p>{{$post->excerpt}}</p>
-<small>Created at {{$post->created_at}}</small>
-<small>{{$post->comment_count}} comments</small>
-    </div>
-</div>
-@endforeach
-</div>
-@endforeach
-</div>
-{{$posts->links()}}
+
+<x-post-grid-pag :posts='$posts'></x-post-grid-pag>
 </x-layout.layout>

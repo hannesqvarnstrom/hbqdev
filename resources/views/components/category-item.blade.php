@@ -1,0 +1,1 @@
+<div class='col-sm-3'><li class='card container'><a href="/categories/{{$id}}">{{$name}}</a></li></div>

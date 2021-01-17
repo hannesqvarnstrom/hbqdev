@@ -47,6 +47,7 @@ class CategoryController extends Controller
     public function show(Category $category)
     {
         //
+        return view('categories.show', ['posts' => $category->posts()->paginate(10), 'category' => $category]);
     }
 
     /**
