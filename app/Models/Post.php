@@ -12,4 +12,9 @@ class Post extends Model
     {
         return $this->hasMany('\App\Models\Comment');
     }
+    public function incrementCommentCount()
+    {
+        $this->comment_count++;
+        $this->save();
+    }
 }

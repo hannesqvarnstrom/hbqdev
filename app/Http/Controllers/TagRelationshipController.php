@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Comment;
+use App\Models\TagRelationship;
 use Illuminate\Http\Request;
 
-class CommentController extends Controller
+class TagRelationshipController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -36,23 +36,15 @@ class CommentController extends Controller
     public function store(Request $request)
     {
         //
-        $comment = new Comment(); //parenteser?
-        $comment->name = $request->name;
-        $comment->post_id = $request->post;
-        $comment->email = $request->email;
-        $comment->body = $request->body;
-        $comment->save();
-        $comment->post()->first()->incrementCommentCount();
-        return redirect('/posts/' . $comment->post_id);
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Comment  $comment
+     * @param  \App\Models\TagRelationship  $tagRelationship
      * @return \Illuminate\Http\Response
      */
-    public function show(Comment $comment)
+    public function show(TagRelationship $tagRelationship)
     {
         //
     }
@@ -60,10 +52,10 @@ class CommentController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Comment  $comment
+     * @param  \App\Models\TagRelationship  $tagRelationship
      * @return \Illuminate\Http\Response
      */
-    public function edit(Comment $comment)
+    public function edit(TagRelationship $tagRelationship)
     {
         //
     }
@@ -72,10 +64,10 @@ class CommentController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Comment  $comment
+     * @param  \App\Models\TagRelationship  $tagRelationship
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Comment $comment)
+    public function update(Request $request, TagRelationship $tagRelationship)
     {
         //
     }
@@ -83,10 +75,10 @@ class CommentController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Comment  $comment
+     * @param  \App\Models\TagRelationship  $tagRelationship
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Comment $comment)
+    public function destroy(TagRelationship $tagRelationship)
     {
         //
     }

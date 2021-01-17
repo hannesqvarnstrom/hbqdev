@@ -12,6 +12,7 @@
 <a href='/posts/{{$post->id}}'><h4>{{$post->title}}</h4></a>
 <p>{{$post->excerpt}}</p>
 <small>Created at {{$post->created_at}}</small>
+<small>{{$post->comment_count}} comments</small>
     </div>
 </div>
 @endforeach

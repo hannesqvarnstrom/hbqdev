@@ -8,5 +8,6 @@
         </div>
     </div>
     <x-comment-form :post='$post'></x-comment-form>
+    <h4>{{$post->comment_count}} comments</h4>
     <x-comments-list :post='$post'></x-comments-list>
 </x-layout.layout>

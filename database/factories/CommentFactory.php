@@ -23,11 +23,13 @@ class CommentFactory extends Factory
      */
     public function definition()
     {
+        $post = Post::inRandomOrder()->first();
+        $post->incrementCommentCount();
         return [
             'name' => $this->faker->name,
             'email' => $this->faker->safeEmail,
             'body' => $this->faker->text(40),
-            'post_id' => Post::inRandomOrder()->value('id'),
+            'post_id' => $post->id,
         ];
     }
 }
