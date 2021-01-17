@@ -2,6 +2,15 @@
     {{Breadcrumbs::render('post', $post)}}
     <div class='container'>
         <div class=' article col-8'>
+            <ul><h5>Tags</h5>
+            @foreach ($post->tags as $tag)
+            <li>{{$tag->name}}</li>
+            @endforeach
+            </ul>
+            <div class='aside'>
+                <small>Category - </small>
+                <strong>{{$post->cat_name}}</strong>
+            </div>
     <h3>{{$post->title}}</h3>
     <small>Created at {{$post->created_at}}</small>
     <p>{{$post->body}}</p>

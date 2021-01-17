@@ -48,6 +48,8 @@ class PostController extends Controller
     public function show(Post $post)
     {
         //
+        $post->tags = $post->tags();
+        $post->cat_name = $post->category()->first()->name;
         return view('posts.show', ['post' => $post]);
     }
 

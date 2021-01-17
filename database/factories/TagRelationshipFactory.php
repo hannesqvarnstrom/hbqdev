@@ -24,6 +24,12 @@ class TagRelationshipFactory extends Factory
      */
     public function definition()
     {
+        $tag_id = Tag::inRandomOrder()->value('id');
+        $post = Post::inRandomOrder()->first();
+        while (in_array($tag_id, $post->tags())) {
+            $tag_id = Tag::inRandomOrder()->value('id');
+        }; //this loop is intended to make sure that no duplicate relationships are made, but i think i can skip that honestly. whatever
+
         return [
             'post_id' => Post::inRandomOrder()->value('id'),
             'tag_id' => Tag::inRandomOrder()->value('id'),
