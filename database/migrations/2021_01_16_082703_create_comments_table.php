@@ -20,6 +20,8 @@ class CreateCommentsTable extends Migration
             $table->string('body');
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent();
+            $table->bigInteger('post_id')->unsigned();
+            $table->foreign('post_id')->references('id')->on('posts');
         });
     }
 
