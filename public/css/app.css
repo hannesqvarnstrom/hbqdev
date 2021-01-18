@@ -31424,10 +31424,6 @@ select {
           animation: bounce 1s infinite;
 }
 
-body {
-  background-color: green !important;
-}
-
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -184447,3 +184443,4 @@ body {
             animation: bounce 1s infinite;
   }
 }
+
