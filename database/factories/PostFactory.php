@@ -27,7 +27,7 @@ class PostFactory extends Factory
     {
         return [
             'title' => $this->faker->text(15),
-            'body' => $this->faker->text(500),
+            'body' => $this->faker->text(3500),
             'excerpt' => $this->faker->text(40),
             'user_id' => User::inRandomOrder()->value('id'),
             'category_id' => Category::inRandomOrder()->value('id')

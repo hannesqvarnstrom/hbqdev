@@ -1,4 +1,4 @@
-<div class="card px-3">
+<div class="px-3">
     <h6>Have something to add? Comment here!</h6>
 <form method='POST' action='/comments'>
     @csrf

@@ -33,4 +33,13 @@ class Post extends Model
         };
         return $arr;
     }
+    public function firstTag()
+    {
+        $rel =  $this->hasMany('\App\Models\TagRelationship')->first();
+        return Tag::find($rel->tag_id);
+    }
+    public function hasTag()
+    {
+        return $this->hasMany('\App\Models\TagRelationship')->exists();
+    }
 }

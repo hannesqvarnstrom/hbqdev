@@ -1,1 +1,1 @@
-<div class='col-sm-3'><li class='card container'><a href="/categories/{{$id}}">{{$name}}</a></li></div>
+<div class='col-lg-4'><li class='card category container'><a href="/categories/{{$id}}">{{$name}}</a></li></div>

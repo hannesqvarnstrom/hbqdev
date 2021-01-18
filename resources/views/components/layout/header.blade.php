@@ -17,7 +17,6 @@
                          <input id='logoutBtn' type='submit' class="nav-link" href="/logout" value='Logout'/>
                     </form>
                </li>
-
                @endauth
                @guest
                <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
