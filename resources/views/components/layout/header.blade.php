@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand-md navbar-light bg-light">
      <div class="container-fluid">
           <a href="/" class="navbar-brand">HBQ Dev</a>
-          <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"><span class="navbar-toggler-icon"></span></button>
+
           <div id="navbarSupportedContent" class="collapse navbar-collapse container">
           <ul class="navbar-nav me-auto mb-2 mb-md0">
                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
@@ -24,5 +24,6 @@
                @endguest
           </ul>
           </div>
+                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"><span class="navbar-toggler-icon"></span></button>
      </div>
 </nav></header>

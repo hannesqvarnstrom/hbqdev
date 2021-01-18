@@ -1,3 +1,70 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+body {
+  background-color: #e7e7f0 !important;
+}
+
+.card {
+  margin-bottom: 0.25rem;
+  margin-top: 0.25rem;
+  border-radius: 10px !important;
+  padding: 10px 20px;
+}
+
+.card.category {
+  text-align: center;
+  background-color: #3a6ec2;
+}
+
+.card.category:hover {
+  background-color: #2e589b;
+}
+
+.card.category a {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #e7e7f0;
+  text-decoration: none;
+}
+
+.post-grid-title {
+  text-decoration: none;
+}
+
+.post-grid-title h4 {
+  margin-right: 1rem;
+}
+
+.pagination {
+  justify-content: center;
+}
+
+.tag-post {
+  list-style-type: none;
+  display: inline;
+}
+
+.post-grid-item small {
+  position: relative;
+}
+
+.post-grid-item small::before {
+  content: '';
+  position: absolute;
+  background-color: silver;
+  height: 1px;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.post-grid-item small::before {
+  content: '';
+}
+
+.article {
+  margin: 2rem auto;
+}
+
+.article h3 {
+  text-align: center;
+}
+/*# sourceMappingURL=app.css.map */
