@@ -6,6 +6,7 @@
     <x-category-item :category='$cat'></x-category-item>
 @endforeach
 </ul>
+<x-component-name name="Pernilla"></x-component-name>
 <h2>All posts</h2>
 <hr>
 
