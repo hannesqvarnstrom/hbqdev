@@ -3795,6 +3795,22 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 __webpack_require__(/*! alpinejs */ "./node_modules/alpinejs/dist/alpine.js");
 
+$(document).ready(function () {
+  $(".hidden-1").removeClass("hidden-1").addClass("fade-in");
+  setTimeout(function () {
+    $(".hidden-2").removeClass("hidden-2").addClass("fade-in");
+    setTimeout(function () {
+      $(".hidden-3").removeClass("hidden-3").addClass("fade-in");
+      $("#hero-wrapper").addClass("hasBorder");
+      setTimeout(function () {
+        $("#action").removeClass("hidden-4").addClass("fade-in");
+      }, 300); // setTimeout(() => {
+      //     $(".hidden-4").removeClass("hidden-4").addClass("fade-in");
+      // }, 500);
+    }, 1000);
+  }, 1000);
+});
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":

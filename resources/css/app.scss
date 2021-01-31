@@ -6,6 +6,7 @@
 $primary: rgb(231, 231, 240);
 $blueprimary: rgb(58, 110, 194);
 $font-primary: rgb(42, 41, 41);
+$action-clr: rgb(245, 212, 66);
 
 body {
     background-color: $primary !important;
@@ -20,7 +21,88 @@ body {
 //     font-size: 1.3em;
 // }
 // }
+body {
 
+}
+#action {
+    background: rgba(27, 27, 27, 0.438);
+    padding: 2rem;
+    color: white;
+    border-radius: 20px;
+    font-weight: 100;
+    button {
+        margin: 1rem 0;
+        width: 100%;
+        font-size: 2em;
+        font-weight: 600;
+    }
+}
+.btn-action {
+    background-color: $action-clr !important;
+}
+#hero {
+    // background-color: black;
+    height: 500px;
+    width: 100vw;
+    margin: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.445), rgba(49, 78, 60, 0.452)),
+    url('/assets/hero.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#hero-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid rgba(255, 255, 255, 0);
+    h1 {
+        color: white;
+    }
+    &.hasBorder{
+        transition: border-bottom 1s ease;
+        border-bottom: 3px solid white;
+    }
+}
+.container.landing {
+
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    border-radius: 12px;
+    background-color: $primary;
+
+}
+#main-wrapper {
+         padding-top: 5rem;
+        background-color: rgb(212, 189, 182);
+}
+.paper {
+    font-size: 2em;
+    padding: 2em;
+}
+.divider {
+            height: 70px;
+            width: 3px;
+            background-color: white;
+            margin: 0 3rem;
+}
+.hidden-1{
+    opacity: 0;
+}
+.hidden-2{
+    opacity: 0;
+}
+.hidden-3{opacity: 0}
+.hidden-4{opacity: 0}
+.fade-in{
+    transition: opacity 2s ease;
+    opacity: 1;
+}
 .card {
     margin-bottom: 0.25rem;
     margin-top: 0.25rem;
