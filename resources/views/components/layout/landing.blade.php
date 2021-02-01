@@ -13,7 +13,7 @@
 
 </head>
 <body>
-    <x-layout.header></x-layout.header>
+    {{-- <x-layout.header></x-layout.header> --}}
     {{-- <main class='container'> --}}
     {{$slot}}
     {{-- </main> --}}

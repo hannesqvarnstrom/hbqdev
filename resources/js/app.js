@@ -18,3 +18,17 @@ $(document).ready(function () {
         }, 1000);
     }, 1000);
 });
+function showPapers(entries, observer) {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            $(entry.target).addClass("fade-in-paper");
+            console.log(entry.target);
+        } else $(entry.target).removeClass("fade-in-paper");
+    });
+}
+const intersOpt = {};
+const observer = new IntersectionObserver(showPapers, intersOpt);
+document.querySelectorAll(".paper").forEach((paper) => {
+    observer.observe(paper);
+});
+// observer.observe(document.querySelectorAll(".paper"));

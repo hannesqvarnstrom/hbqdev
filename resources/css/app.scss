@@ -5,6 +5,7 @@
 // here is a good spot to MAYBE edit bootstrap's color-scheme?
 $primary: rgb(231, 231, 240);
 $blueprimary: rgb(58, 110, 194);
+$grnprimary: rgb(44, 93, 44);
 $font-primary: rgb(42, 41, 41);
 $action-clr: rgb(245, 212, 66);
 
@@ -42,7 +43,7 @@ body {
 }
 #hero {
     // background-color: black;
-    height: 500px;
+    height: 700px;
     width: 100vw;
     margin: 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.445), rgba(49, 78, 60, 0.452)),
@@ -71,19 +72,33 @@ body {
 }
 .container.landing {
 
-    border-left: 1px solid grey;
-    border-right: 1px solid grey;
-    border-radius: 12px;
-    background-color: $primary;
-
+    // border-left: 1px solid grey;
+    // border-right: 1px solid grey;
+    // border-radius: 12px;
+    //can safely be removed maybe. is a wrapper for the papers
 }
 #main-wrapper {
          padding-top: 5rem;
         background-color: rgb(212, 189, 182);
 }
 .paper {
-    font-size: 2em;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    // font-size: 2em;
     padding: 2em;
+    background-color: $primary;
+    // display: none;
+    opacity: 0;
+}
+.logo-inline {
+    color: $grnprimary;
+    font-weight: 600;
+}
+.text-small {
+    font-size: 1.7rem !important;
 }
 .divider {
             height: 70px;
@@ -102,6 +117,12 @@ body {
 .fade-in{
     transition: opacity 2s ease;
     opacity: 1;
+    display: block;
+}
+.fade-in-paper {
+    transition: opacity 3s ease;
+    opacity: 1;
+    display: block;
 }
 .card {
     margin-bottom: 0.25rem;

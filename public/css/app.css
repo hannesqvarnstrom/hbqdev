@@ -22,7 +22,7 @@ body {
 }
 
 #hero {
-  height: 500px;
+  height: 700px;
   width: 100vw;
   margin: 0;
   background-image: linear-gradient(rgba(0, 0, 0, 0.445), rgba(49, 78, 60, 0.452)), url("/assets/hero.jpg");
@@ -52,21 +52,29 @@ body {
   border-bottom: 3px solid white;
 }
 
-.container.landing {
-  border-left: 1px solid grey;
-  border-right: 1px solid grey;
-  border-radius: 12px;
-  background-color: #e7e7f0;
-}
-
 #main-wrapper {
   padding-top: 5rem;
   background-color: #d4bdb6;
 }
 
 .paper {
-  font-size: 2em;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
   padding: 2em;
+  background-color: #e7e7f0;
+  opacity: 0;
+}
+
+.logo-inline {
+  color: #2c5d2c;
+  font-weight: 600;
+}
+
+.text-small {
+  font-size: 1.7rem !important;
 }
 
 .divider {
@@ -95,6 +103,13 @@ body {
 .fade-in {
   transition: opacity 2s ease;
   opacity: 1;
+  display: block;
+}
+
+.fade-in-paper {
+  transition: opacity 3s ease;
+  opacity: 1;
+  display: block;
 }
 
 .card {
