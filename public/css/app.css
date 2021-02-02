@@ -19,6 +19,31 @@ body {
 
 .btn-action {
   background-color: #f5d442 !important;
+  width: 100%;
+}
+
+.action-text {
+  color: #2a2929;
+  font-weight: 600;
+}
+
+#action-target .btn {
+  width: 100%;
+}
+
+#action-target {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+
+#action-target .link-container > * {
+  margin: 10px 0;
+}
+
+.link-container > div {
+  display: flex;
+  justify-content: center;
 }
 
 #hero {
@@ -75,6 +100,10 @@ body {
 
 .text-small {
   font-size: 1.7rem !important;
+}
+
+.text-tiny {
+  font-size: 1.2rem !important;
 }
 
 .divider {
@@ -176,4 +205,10 @@ body {
 
 .article h3 {
   text-align: center;
+}
+
+@media only screen and (max-width: 850px) {
+  #action-target {
+    grid-template-columns: 1fr;
+  }
 }

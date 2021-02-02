@@ -40,6 +40,27 @@ body {
 }
 .btn-action {
     background-color: $action-clr !important;
+    width: 100%;
+    // display: block;
+}
+.action-text {
+    color: $font-primary;
+    font-weight: 600;
+}
+#action-target .btn {
+    width: 100%;
+}
+#action-target {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    .link-container > * {
+        margin: 10px 0;
+    }
+}
+.link-container > div {
+    display: flex;
+    justify-content: center;
 }
 #hero {
     // background-color: black;
@@ -99,6 +120,9 @@ body {
 }
 .text-small {
     font-size: 1.7rem !important;
+}
+.text-tiny {
+    font-size: 1.2rem !important;
 }
 .divider {
             height: 70px;
@@ -192,5 +216,10 @@ body {
 
     h3 {
         text-align: center;
+    }
+}
+@media only screen and (max-width: 850px) {
+    #action-target{
+        grid-template-columns: 1fr;
     }
 }
